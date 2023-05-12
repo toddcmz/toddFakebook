@@ -1,0 +1,11 @@
+{% extends "base.jinja" %}
+
+{% block content %}
+
+    <h3>{{ user.username}}'s Page</h3>
+
+    {% for post in user.posts %}
+        <p>{{ post.body }}</p>
+        <p><small>{{ post.timestamp }}</small></p>
+    {% endfor %}
+{% endblock %}

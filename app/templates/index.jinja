@@ -1,0 +1,15 @@
+{% extends 'base.jinja' %}
+
+{% block content %}
+
+    <h1>Matrix Fakebook Testing</h1>
+    <h3>Instructors</h3>
+    <p>{{instructors[0]}}</p> 
+    <p>{{instructors[1]}}</p>
+    <h3>Students</h3>
+    {% for ele in students %}
+        <p>{{ ele.title() }}</p>
+    {% endfor %}
+
+{% endblock %}
+

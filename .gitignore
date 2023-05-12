@@ -1,0 +1,4 @@
+venv_fb/
+.env
+__pycache__/
+migrations/
